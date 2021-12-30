@@ -1,0 +1,73 @@
+server:
+  port: 8888
+spring:
+  security:
+    user:
+      password: hello
+      name: jay
+  application:
+    name: springconfig
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jacko1997/spring-properties.git
+          username: jacko1997
+          password: jaYa@1221
+#          ignore-local-ssh-settings: true
+#          private-key:  |
+#                        -----BEGIN OPENSSH PRIVATE KEY-----
+#                        b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABDru/gHri
+#                        2cXWVhUgSJxhcoAAAAEAAAAAEAAAIXAAAAB3NzaC1yc2EAAAADAQABAAACAQDZH1oKYoHX
+#                        EtGU7b2GgoyOONAn21eNay0BTU07xgWOiZv4F0bgOh3IiXetjFZOubFKHq/zWPZNRe0ec6
+#                        AY4KKN8EwNwXNcoFSVVxE4a1GotWBbXlP26AFtn8oRBh1NRavHhoEdU2wlBoZnduNoQuRP
+#                        puT+CDndlgVCyctbrXIoEYp6jP7gjaobAkkm1LQxnPIHa8tZMxeMbtZCjlQ4xBnhTDxJ+A
+#                        u3MtqppjzmmnDYZ58qQi8XdoXLU3OQkn9s/18/HgdZPQvluzr0hKtdQ1UYVy+PUGSCP7Nd
+#                        enJxxvciXTb8hkESKOiq4jhsDIgfaB2UkZsIrt9EhtuSnWO2hvFX9xYbXTAQeUFJVt+H2x
+#                        i9q7EcsyQ7rWg+x7KFPWA5xQZOxXal4MClRbh51lUHAaf0Xrhi2cC10f1GFfyoGzhlL3D5
+#                        aswIVKYAOJMgW9KJQ8NOF7w++28x0zfnDhtmGQW/FoQrgnLorJZnCTqyO+j+IBCL4J1smg
+#                        XNk7tI4tqMgtuqZr2+rQIg5qROPlZA8PCuIZL3dv6+JpHPguevl9dj32dDYbHvNUudJ5Qa
+#                        KRaLn0naW0khyPR8GYmsPPUJKtBuNkXuYavXFxawGdqOdX4UaVV319B9TWL76ppPQ23hz4
+#                        aqxpdIvHlxfuIWYUVKlLOa8EucfWsk1fZ7JUth+4MCGQAAB1BlB5c8/mq9COdBHSIMmWma
+#                        rckGsGGLdw3+VwnZMcUFpN+ciHHokooF5OEaJqhXcbTzXbpvvcclHNeNj4++mMg10yvC79
+#                        czh5g2OMjLd79GyQYN2bmQtPknEtL5bzPJJMXPFkv+D6xc7siOMkiTKbysr4gXdIo8GP8t
+#                        cHITUWORlo3Fo84mVeoTIgyUOtXwF5HaI4Tl1y2TQVjy5sTtKovLuFK4YT/LIsbpqMFie6
+#                        0GGCcHiWy+2yWjWEDrx3JlgQbM0fiAnSH5xO5RUJRXSp79VDCZtu1Az20s1u/Kq8OflDHy
+#                        4zZp0bnioVkwJtQWexV3X6UKHSCVMK3DGzZjcfahzHJ7zghcpZ3cDM3B29WVUAQqoiCgiH
+#                        hDGR1/enjWOMEj2gPlxezS+TNRvgGgOPKyhQyK90Fk3A4Q/xBTh5tyG1iYBBAHWKovyxDl
+#                        A1UZ/az+jmw1dt9+t6Z9ReRQ36TrX+oRUcJX1PfAQobeNNKVleuDJgLCImOTUBb97Qxn3H
+#                        lb4N8QDFXTwQddU0Oq0cup3h/wIsRnnoRIAXTYLuLSCAvJaP5dN62/Lz4F4XSwOUrHoOMZ
+#                        nODHd3ZCJxHLm/pj62Qy7aVmWtl5aODFSiAF1S+OzGFKA+DMrC9l5GliXWcIKx0Km7FUuX
+#                        DWQ4297h03rRMoomIRNUsJOa+qxx1Duz5NioACwFWU5M7pHH/YCqFtU2nFT7K91HlxEl0s
+#                        TP3OqTyOwLL/r4TZsr/K4ZpxegMTjGfFb4ueH0p1jMyAQZU1MmjVSZE8JLWMXrGrroa9Jm
+#                        ZMHT5rs15b/SAsbiu0vufUWdQ4NaAnMEnFgJdzWkSQzdBrOf2wOhgMbubBQKingVSUQ8/1
+#                        4uvGCdx+lgVENB4P4+ChyZR65maufcnkjJk9gBVGqZzxuC9KeoYwfi6kKMaRnepInZeruC
+#                        CQyuarHaZ56nneC2f4qLiwrl6mSiT9XN6LnK9DMQpHAHNRjeKIN6lt9apuA4gM9EFfsvuz
+#                        zJq4d1iR8nzDy3R88b8+7jkpJ+IkPIFBdtRJ0H8ca6/RVSh6zygoiyJb5DvDRSgLVQxSs6
+#                        Snkt55Amz6IkQxeftD/rul3AtZP0MCaTr+F6ymRKxPr/vjUM5Dhsno13SNvWnGcPVv2Cf6
+#                        92HWcuXznedGmc2vOEaTqV0ZZrv+1xyEVoo+w/PuybYBgxQHiUiOF3+bCSC+3heboZuZ4P
+#                        T41r5+DX3qBgubyEsYQz6CDIwB0aBbWO4W0ZLEGfNqDH9pW8/Hq5sUkJ18l2/rF+kTKnNn
+#                        YuI8RLzgHMntNt5zZwE6d1kg1yYhPkJkX3hNHxzz9ehILrlI+kL7oChDdwn87Di1ZOorJt
+#                        QwwFKJjDLB8gp++LbVK0V8+Fkd8Jy0gWT2uLOWz9/3gW3RSdgc4b0BDGBvc0zascAtakt1
+#                        8PSNAi9urnxNYEaJCvflmMJ+eVb2agTkVFyb+DJCW3DSETs84o9UQfU7Tr3uEmhlvLA/lY
+#                        oQrKYoVcnXqM2TIyNUTnL25i2iNvAzxI/T+i5ljkpUjrTiPIEly2XiQ6Ovpc2Pf0lMmYfW
+#                        q3a1wLUf8/uK1JOkpaZ4Vqr2Dqdy/CuGBPY77Bbfxy/H+ugY9y7bn9i/napGF2/m7tVmr1
+#                        co8iqMRTjad9Th8P9tyAuaagb3VLHxjXtgv3s/exr8FvBaevBJTDl1jT+6O7LeU2dI+Nc3
+#                        /FEQExkXg757D3/EEF7GD4Ypwm2Yd+1ayqADo9TWjokwkQcQVZtGYWPvtAQNnV9XZ4bSnQ
+#                        izt/l2ppREQQMmHtpodLW3Hngd+BiJGowss7MFi1OHNoxezjOhdHcHmynQq0QkJJWIavDl
+#                        Bx2v+tGESO276yLWvh64UMZ/W9FOC9PWqcgtk5C3LI7EorA89F9QYfkKfrd/o5fm54TXVy
+#                        flOCmCA4z4BN4QDWwDKvdFsHspWDEFPUbDu4HN+Zh3mJlA/Ndzx7PDBUP89ZjdGyc9eqpt
+#                        XNJ3IzXIff0O8POInL71DTpHk7gsgkx41SDyXXRRR9JWsO8KazNqhYhKVMA4wuMaVSPh9L
+#                        6EMCxRz4GeQGrWC+AOSNtC9foQYPOdRkvO8EAgwYnsJ5sesy1KItWUmCVEytcO3gBV9KSj
+#                        qMSSVZphZUO7+57qJUDrLe2CPtfNGDUOTnbfIOt1rGYNfvuXvsOhVD5rJsQq2iMaaBKSQU
+#                        fpE939FJDulAf51TN6x+zRk5C16UGuu5miO0mAQMuYBZH7l5aK4G/u+S2YV/ohX77yVfyB
+#                        CFyOg/HBuaVqUfS7EMEDc6srfV7UYtESNk8J9e4Iiq3RN2OiAAzrORoY6cJQQ120yFKkh0
+#                        M/y6y5AuDeeRO5Wc2t5Ut7lTKmLOFqnnkmqbTVLLUf0K8yVbWFu+cuYiTwti/bnGrMtkr0
+#                        g5g7kqmbP7ojh8ctjMT21I64qRBoBIYwK5+6WEw4bCqSB2lsUI7ufkdSuI7SqvENL3OyBD
+#                        NB+W2yX1iw8n/pXJIKQs7n0hE=
+#                        -----END OPENSSH PRIVATE KEY-----
+#
+#
+#
+#          host-key-algorithm: ssh-rsa
+#          passphrase: jaYa@1221
